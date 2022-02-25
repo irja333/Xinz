@@ -966,7 +966,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 				break
 				case prefix+'bisakah':
 				if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} aku jadi ganteng`)
-					const bisa = ['Tentu Saja Bisa! Kamu Adalah Orang Paling Homky', 'Gak Bisa Ajg Aowkwowk', 'Hmm Gua Gak Tau Yaa, tanya ama bapakau', 'Ulangi Tod Gua Ga Paham']
+					const bisa = ['Tentu Saja Bisa! Kamu Adalah Orang Paling Homky', 'Gak Bisa Aowkwowk', 'Hmm Gua Gak Tau Yaa, tanya ama bapakau', 'Ulangi Gua Ga Paham']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
 					xinz.sendMessage(from, 'Pertanyaan : bisakah ' + q + '\n\nJawaban : ' + keh, text, { quoted: msg })
 					break
@@ -993,7 +993,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 
 				case prefix+'hobby':
 				if (!q) return reply(`Penggunaan ${command} text\n\nContoh : ${command} Rara`)
-					const hob = ['Desah Di Game', 'Ngocokin Doi', 'Stalking sosmed nya mantan', 'Kau kan gak punya hobby awokawok', 'Memasak', 'Membantu Atok', 'Mabar', 'Nobar', 'Sosmedtan', 'Membantu Orang lain', 'Nonton Anime', 'Nonton Drakor', 'Naik Motor', 'Nyanyi', 'Menari', 'Bertumbuk', 'Menggambar', 'Foto fotoan Ga jelas', 'Maen Game', 'Berbicara Sendiri']
+					const hob = ['Stalking sosmed nya mantan', 'Kau kan gak punya hobby awokawok', 'Memasak', 'Membantu Atok', 'Mabar', 'Nobar', 'Sosmedtan', 'Membantu Orang lain', 'Nonton Anime', 'Nonton Drakor', 'Naik Motor', 'Nyanyi', 'Menari', 'Bertumbuk', 'Menggambar', 'Foto fotoan Ga jelas', 'Maen Game', 'Berbicara Sendiri']
 					const by = hob[Math.floor(Math.random() * hob.length)]
 					xinz.sendMessage(from, 'Pertanyaan : hobby ' + q + '\n\nJawaban : ' + by, text, { quoted: msg })
 					break
@@ -1011,7 +1011,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					xinz.sendImage(from, await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`), 'Dare\n\n' + der , msg)
 					break
-				case prefix+'cekbapak': // By Ramlan ID
+				case prefix+'cekbjshjajsapak': // By Ramlan ID
 					const bapak = ['Wah Mantap Lu Masih Punya Bapack\nPasti Bapack Nya Kuli :v\nAwowkwokwwok\n#CandabOs', 'Aowkwwo Disini Ada Yteam :v\nLu Yteam Bro? Awowkwowk\nSabar Bro Ga Punya Bapack\n#Camda', 'Bjir Bapack Mu Ternyata Sudah Cemrai\nSedih Bro Gua Liatnya\nTapi Nih Tapi :v\nTetep Ae Lu Yteam Aowkwowkw Ngakak :v', 'Jangan #cekbapak Mulu Broo :v\nKasian Yang Yteam\nNtar Tersinggung Kan\nYahahaha Hayyuk By : Ramlan ID']
 					const cek = bapak[Math.floor(Math.random() * bapak.length)]
 					xinz.sendMessage(from, cek, text, { quoted: msg })
@@ -1124,6 +1124,12 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 let timestamp = speed();
 				let latensi = speed() - timestamp
                 textImg(`${latensi.toFixed(4)} Second`)
+            }
+                break
+            case prefix+'p':{
+                let timestamp = speed();
+                                let latensi = speed() - timestamp
+                textImg(`Bot on, silahkan ketikan perintah`)
             }
                 break
             case prefix+'donate': case prefix+'donasi':
@@ -1313,7 +1319,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 }
             }
                 break
-            case prefix+'play': case prefix+'playmp3':{
+            case prefix+'play': case prefix+'hsusplaymp3':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 if (args.length === 1) return reply(`Kirim perintah *${prefix}play query*`)
                 try {
@@ -1405,8 +1411,8 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 })
             }
                 break
-            case prefix+'yts':
-            case prefix+'ytsearch':{
+            case prefix+'sueuyts':
+            case prefix+'ytddjssearch':{
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
                 if (args.length < 2) return reply(`Kirim perintah *${prefix}ytsearch* _query_`)
                 reply(mess.wait)
