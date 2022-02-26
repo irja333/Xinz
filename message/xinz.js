@@ -522,7 +522,6 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
             }
                 break
             case prefix+'stickerwm': case prefix+'swm': case prefix+'take': case prefix+'takesticker': case prefix+'takestick':{
-                if (!isPremium) return reply(mess.OnlyPrem)
                 if (args.length < 2) return reply(`Penggunaan ${command} nama|author`)
                 let packname1 = q.split('|')[0] ? q.split('|')[0] : q
                 let author1 = q.split('|')[1] ? q.split('|')[1] : ''
