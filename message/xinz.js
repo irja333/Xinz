@@ -1097,7 +1097,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 xinz.sendContact(from, q.split("|")[0], q.split("|")[1], msg)
                 break
             case prefix+'hidetag':{
-                if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
+                if (!isGroupAdmins && !isOwner)return reply(mess.GrupAdmin)
                 if (args.length < 2) return reply(`Masukkan text`)
                 let arr = [];
                 for (let i of groupMembers){
