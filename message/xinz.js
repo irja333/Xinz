@@ -2073,7 +2073,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 mentions(`@${sender.split('@')[0]} sedang afk\nAlasan : ${reason}`, [sender], true)
                 break
             case prefix+'infogrup':
-            case prefix+'infogrouup':
+            case prefix+'infogroup':
             case prefix+'grupinfo':
             case prefix+'groupinfo':
                 if (!isGroup) return reply(mess.OnlyGrup)
@@ -2165,6 +2165,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                 break
             case prefix+'linkgc': case prefix+'linkgrup': case prefix+'linkgroup':
                 if (!isGroup) return reply(mess.OnlyGrup)
+                if (!isGroupAdmins && !isOwner)return reply(mess.GrupAdmin)
                 if (!isBotGroupAdmins) return reply(mess.BotAdmin)
                 xinz.groupInviteCode(from)
                 .then((res) => reply('https://chat.whatsapp.com/' + res))
