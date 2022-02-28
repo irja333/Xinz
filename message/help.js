@@ -45,8 +45,6 @@ exports.stickerMenu = (prefix, ownerName) => {
 ├────────────────────
 ├≽ *${prefix}sticker*
 ├≽ *${prefix}stickergif*
-├≽ *${prefix}swm*
-├≽ *${prefix}take*
 ├≽ *${prefix}toimg*
 ├≽ *${prefix}attp*
 ├─────────────────────
