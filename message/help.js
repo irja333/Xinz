@@ -16,7 +16,7 @@ exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushn
 ├────────────────────
 ├────────────────────
 ├≽ *Creator : ${ownerName}*
-├≽ *Lib : Baileys V.3.5.1*
+├≽ *Instagram : https://instagram.com/irja_official*
 ├≽ *Prefix : 「 ${prefix} 」*
 ├≽ *Total Fitur : 100+*
 ├≽ *Total Pengguna : ${pendaftar.length}*
@@ -44,9 +44,6 @@ exports.stickerMenu = (prefix, ownerName) => {
     return `╒═══ 《 *STICKER MENU* 》 ═══
 ├────────────────────
 ├≽ *${prefix}sticker*
-├≽ *${prefix}stickergif*
-├≽ *${prefix}swm*
-├≽ *${prefix}take*
 ├≽ *${prefix}toimg*
 ├≽ *${prefix}attp*
 ├─────────────────────
