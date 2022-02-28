@@ -16,7 +16,6 @@ exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushn
 ├────────────────────
 ├────────────────────
 ├≽ *Creator : ${ownerName}*
-├≽ *Instagram : https://instagram.com/irja_official*
 ├≽ *Prefix : 「 ${prefix} 」*
 ├≽ *Total Fitur : 100+*
 ├≽ *Total Pengguna : ${pendaftar.length}*
